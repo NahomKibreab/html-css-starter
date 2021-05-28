@@ -34,6 +34,23 @@
         color: rgb(232, 131, 106);
       }
       /* PART 2 CSS*/
+      .section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+      }
+      .section .menu_lists div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: 1px solid black;
+      }
+      .section .menu_lists div p:first-child {
+        margin-right: 10px;
+      }
+      .section .menu_lists div p:last-child {
+        text-align: right;
+      }
     </style>
     <!-- END OF CSS -->
   </head>
@@ -93,23 +110,149 @@
     <main>
       <h2>Menu</h2>
       <!-- Create a restaurant menu here -->
-      <div id="Appetizers">
+      <div class="section">
         <h3>APPETIZERS</h3>
         <div class="menu_lists">
           <p>name: Cranberry Brie Bread</p>
-          <p>
-            description: gooey brie topped with sweet cranberries on a crusty
-            loaf of sourdough
-          </p>
-          <p>price: $18.00</p>
+          <div>
+            <p>
+              description: gooey brie topped with sweet cranberries on a crusty
+              loaf of sourdough
+            </p>
+            <p>price: $18.00</p>
+          </div>
+          <hr />
         </div>
         <div class="menu_lists">
           <p>name: Korean Beef Lettuce Wraps</p>
-          <p>
-            description: bulgogi beef wrapped in little lettuce packages with
-            homemade pickled onions and radishes, topped with miso mayo
-          </p>
-          <p>price: $14.00</p>
+          <div>
+            <p>
+              description: bulgogi beef wrapped in little lettuce packages with
+              homemade pickled onions and radishes, topped with miso mayo
+            </p>
+            <p>price: $14.00</p>
+          </div>
+          <hr />
+        </div>
+        <div class="menu_lists">
+          <p>name: Spinach-Stuffed Mushrooms</p>
+          <div>
+            <p>
+              description: creamy, garlicky, spinach stuffed mushrooms topped
+              with bubbling parmesan cheese
+            </p>
+            <p>price: $12.00</p>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="section">
+        <h3>MAINS</h3>
+        <div class="menu_lists">
+          <p>name: Apple and Onion Pork Chops</p>
+          <div>
+            <p>
+              description: hearty fall flavours served with brussels sprouts
+              with toasted hazelnut butter and an in house made french roll
+            </p>
+            <p>price: $24.00</p>
+          </div>
+          <hr />
+        </div>
+        <div class="menu_lists">
+          <p>name: Grilled Moroccan Chicken</p>
+          <div>
+            <p>
+              description: fragrant chicken cooked with garlic, lemon, and
+              pomegranate molasses served with roasted turmeric cauliflower
+              topped with creamy yogurt
+            </p>
+            <p>price: $26.00</p>
+          </div>
+          <hr />
+        </div>
+        <div class="menu_lists">
+          <p>name: Grilled Lobster Tails with Coriander</p>
+          <div>
+            <p>
+              description: fresh and tender lobster tails seasoned with
+              coriander and topped with warm chilli butter sauce
+            </p>
+            <p>price: $32.00</p>
+          </div>
+          <hr />
+        </div>
+        <div class="menu_lists">
+          <p>Dried Tomato Florentine Pasta</p>
+          <div>
+            <p>
+              description: spicy pasta cooked in a sun dried tomato cream sauce
+              topped with spinach and mozzarella
+            </p>
+            <p>price: $22.00</p>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="section">
+        <h3>SALADS</h3>
+        <div class="menu_lists">
+          <p>name: Broccoli and Apple Salad with Chicken</p>
+          <div>
+            <p>
+              description: charred broccoli, sweet fuji apples, feta cheese and
+              warm grilled chicken breast served on a bed of mixed greens
+            </p>
+            <p>price: $18.00</p>
+          </div>
+          <hr />
+        </div>
+        <div class="menu_lists">
+          <p>name: Persimmon, Pomegranate, and Kale Salad</p>
+          <div>
+            <p>
+              description: massaged seasoned kale salad served with a delicious
+              tangy citrus dressing
+            </p>
+            <p>price: $14.00</p>
+          </div>
+          <hr />
+        </div>
+        <div class="menu_lists">
+          <p>name: Peach, Sweet Corn and Halloumi Salad</p>
+          <div>
+            <p>
+              description: fresh sweet corn and juicy peaches served with salty
+              halloumi cheese on arugula
+            </p>
+            <p>price: $22.00</p>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="section">
+        <h3>DESSERTS</h3>
+        <div class="menu_lists">
+          <p>name: Salted Caramel White Chocolate Brownies</p>
+          <div>
+            <p>
+              description: decadent gooey white chocolate brownies layered with
+              in house made caramel
+            </p>
+            <p>price: $12</p>
+          </div>
+          <hr />
+        </div>
+        <div class="menu_lists">
+          <p>name: Cinnamon Sugar Pretzel Bites</p>
+          <div>
+            <p>
+              description: warm fried dough covered in cinnamon sugar served
+              with chocolate sauce for dipping
+            </p>
+            <p>price: $8</p>
+          </div>
+          <hr />
         </div>
       </div>
     </main>
