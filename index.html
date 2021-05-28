@@ -1,76 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles-readonly.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <title>Joe's Restaurant</title>
-  <!-- CSS Styling -->
-  <style>
-    /* FOR THIS CHALLENGE, WRITE ALL OF YOUR STYLING WITHIN THIS <style> TAG */
-    /* PART 1 CSS */
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles-readonly.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>Joe's Restaurant</title>
+    <!-- CSS Styling -->
+    <style>
+      /* FOR THIS CHALLENGE, WRITE ALL OF YOUR STYLING WITHIN THIS <style> TAG */
+      /* PART 1 CSS */
+      header {
+        color: rgb(57, 57, 57);
+      }
+      nav {
+        background-color: rgb(179, 193, 176);
+      }
+      #hero-container img {
+        width: 100%;
+      }
+      #greeting h1 {
+        font-family: Arial;
+        margin-bottom: 10px;
+      }
 
-    /* PART 2 CSS*/
-
-
-  </style>
-  <!-- END OF CSS -->
-</head>
-<body>
-
-  <!-- HTML & CSS: PART 1 -->
-  <header>
-    <!-- 
+      #slogan .highlight {
+        color: rgb(232, 131, 106);
+      }
+      /* PART 2 CSS*/
+    </style>
+    <!-- END OF CSS -->
+  </head>
+  <body>
+    <!-- HTML & CSS: PART 1 -->
+    <header>
+      <!-- 
       For this <header> element, write the following styling:
         - font color of rgb(57,57,57)
      -->
-    <nav>
-    <!--
+      <nav>
+        <!--
       For this <nav> element, write the following styling:
         - background color of rgb(179,193,176). 
     -->
-      <h1>Joe's</h1>
-      <ul>
-        <li>Menu</li>
-        <li>Home</li>
-      </ul>
-    </nav>
-    <div id="hero-container">
-      <!-- 
+        <h1>Joe's</h1>
+        <ul>
+          <li>Menu</li>
+          <li>Home</li>
+        </ul>
+      </nav>
+      <div id="hero-container">
+        <!-- 
         In this div above #greeting, we want to display a nice big hero image. 
         Below this comment, create an image tag and ensure it has the following:
           - Your image should have a width of 100%. 
           - The image you should show lives at this url (https://drive.google.com/uc?export=view&id=1Jz937sGmWecge5XywqMkmqPoFqliUu9z).
       -->
+        <img
+          src="https://drive.google.com/uc?export=view&id=1Jz937sGmWecge5XywqMkmqPoFqliUu9z"
+        />
 
-        <div id='greeting'>
+        <div id="greeting">
           <!-- 
           Below this comment, create a level-one header displaying the restaurant name. This is the main title of the page and should be above the slogan.
           Your h1 should have the following styling:
             - The font style should be Arial.
             - Should have a margin bottom of 10 pixels.
           -->
-          
-
+          <h1>Joe's Restaurant</h1>
           <!-- 
           Apply a class name of "highlight" to each <span> tag in the level-five header below.
           For your class name write the styling to change the color of the font from black to rgb(232,131,106).
           -->
-          <h5 id="slogan"><span>Always</span> serving <span>fresh</span> ingredients with a smile.</h5>
+          <h5 id="slogan">
+            <span class="highlight">Always</span> serving
+            <span class="highlight">fresh</span> ingredients with a smile.
+          </h5>
         </div>
         <i class="fas fa-chevron-down"></i>
-    </div>
-  </header>
-  <!-- 
+      </div>
+    </header>
+    <!-- 
     HTML & CSS: PART 2 
     Follow the instructions / requirements presented in the prep course "Projects" tab > "Restaurant Website & Menu" > "Part 2"
   -->
-  <main>
-    <h2>Menu</h2>
-    <!-- Create a restaurant menu here -->
-  </main>
-</body>
+    <main>
+      <h2>Menu</h2>
+      <!-- Create a restaurant menu here -->
+      <div id="Appetizers">
+        <h3>APPETIZERS</h3>
+        <div class="menu_lists">
+          <p>name: Cranberry Brie Bread</p>
+          <p>
+            description: gooey brie topped with sweet cranberries on a crusty
+            loaf of sourdough
+          </p>
+          <p>price: $18.00</p>
+        </div>
+        <div class="menu_lists">
+          <p>name: Korean Beef Lettuce Wraps</p>
+          <p>
+            description: bulgogi beef wrapped in little lettuce packages with
+            homemade pickled onions and radishes, topped with miso mayo
+          </p>
+          <p>price: $14.00</p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
