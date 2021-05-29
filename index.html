@@ -22,6 +22,11 @@
       nav {
         background-color: rgb(179, 193, 176);
       }
+      nav h1 a,
+      nav ul li a {
+        text-decoration: none;
+        color: inherit;
+      }
       #hero-container img {
         width: 100%;
       }
@@ -38,18 +43,54 @@
         display: flex;
         flex-direction: column;
         margin: 20px auto;
+        background-color: rgb(179, 193, 176);
+        padding: 1rem 0.75rem;
+        border-radius: 15px;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+      }
+      .section .menu_lists {
+        box-sizing: border-box;
+        background-color: gainsboro;
+        padding: 8px;
+        border-radius: 0.5rem;
+        margin: 8px 0px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
       }
       .section .menu_lists div {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        border: 1px solid black;
+        align-items: center;
+        margin: 5px 0 0 0;
       }
       .section .menu_lists div p:first-child {
         margin-right: 10px;
       }
       .section .menu_lists div p:last-child {
-        text-align: right;
+        text-align: center;
+        background-color: rgb(55, 121, 40);
+        color: white;
+        padding: 3px 8px;
+        border-radius: 3px;
+      }
+      .section ul {
+        box-sizing: border-box;
+        background-color: gainsboro;
+        border-radius: 0.5rem;
+        padding: 8px 25px;
+        margin: 8px 0px;
+      }
+
+      .section ul li:nth-child(2) {
+        color: rgb(192, 32, 11);
+        text-decoration: underline;
+      }
+      @media (max-width: 500px) {
+        .section .menu_lists div {
+          flex-direction: column;
+        }
+        .section .menu_lists div p:last-child {
+          margin-top: 5px;
+        }
       }
     </style>
     <!-- END OF CSS -->
@@ -66,10 +107,10 @@
       For this <nav> element, write the following styling:
         - background color of rgb(179,193,176). 
     -->
-        <h1>Joe's</h1>
+        <h1><a href="#">Joe's</a></h1>
         <ul>
-          <li>Menu</li>
-          <li>Home</li>
+          <li><a href="#main">Menu</a></li>
+          <li><a href="#">Home</a></li>
         </ul>
       </nav>
       <div id="hero-container">
@@ -107,153 +148,163 @@
     HTML & CSS: PART 2 
     Follow the instructions / requirements presented in the prep course "Projects" tab > "Restaurant Website & Menu" > "Part 2"
   -->
-    <main>
+    <main id="main">
       <h2>Menu</h2>
       <!-- Create a restaurant menu here -->
       <div class="section">
         <h3>APPETIZERS</h3>
         <div class="menu_lists">
-          <p>name: Cranberry Brie Bread</p>
+          <p>Name: Cranberry Brie Bread</p>
+          <hr />
           <div>
             <p>
-              description: gooey brie topped with sweet cranberries on a crusty
+              Description: gooey brie topped with sweet cranberries on a crusty
               loaf of sourdough
             </p>
-            <p>price: $18.00</p>
+            <p>$18.00</p>
           </div>
-          <hr />
         </div>
         <div class="menu_lists">
-          <p>name: Korean Beef Lettuce Wraps</p>
+          <p>Name: Korean Beef Lettuce Wraps</p>
+          <hr />
           <div>
             <p>
-              description: bulgogi beef wrapped in little lettuce packages with
+              Description: bulgogi beef wrapped in little lettuce packages with
               homemade pickled onions and radishes, topped with miso mayo
             </p>
-            <p>price: $14.00</p>
+            <p>$14.00</p>
           </div>
-          <hr />
         </div>
         <div class="menu_lists">
-          <p>name: Spinach-Stuffed Mushrooms</p>
+          <p>Name: Spinach-Stuffed Mushrooms</p>
+          <hr />
           <div>
             <p>
-              description: creamy, garlicky, spinach stuffed mushrooms topped
+              Description: creamy, garlicky, spinach stuffed mushrooms topped
               with bubbling parmesan cheese
             </p>
-            <p>price: $12.00</p>
+            <p>$12.00</p>
           </div>
-          <hr />
         </div>
       </div>
       <div class="section">
         <h3>MAINS</h3>
         <div class="menu_lists">
-          <p>name: Apple and Onion Pork Chops</p>
+          <p>Name: Apple and Onion Pork Chops</p>
+          <hr />
           <div>
             <p>
-              description: hearty fall flavours served with brussels sprouts
+              Description: hearty fall flavours served with brussels sprouts
               with toasted hazelnut butter and an in house made french roll
             </p>
-            <p>price: $24.00</p>
+            <p>$24.00</p>
           </div>
-          <hr />
         </div>
         <div class="menu_lists">
-          <p>name: Grilled Moroccan Chicken</p>
+          <p>Name: Grilled Moroccan Chicken</p>
+          <hr />
           <div>
             <p>
-              description: fragrant chicken cooked with garlic, lemon, and
+              Description: fragrant chicken cooked with garlic, lemon, and
               pomegranate molasses served with roasted turmeric cauliflower
               topped with creamy yogurt
             </p>
-            <p>price: $26.00</p>
+            <p>$26.00</p>
           </div>
-          <hr />
         </div>
         <div class="menu_lists">
-          <p>name: Grilled Lobster Tails with Coriander</p>
+          <p>Name: Grilled Lobster Tails with Coriander</p>
+          <hr />
           <div>
             <p>
-              description: fresh and tender lobster tails seasoned with
+              Description: fresh and tender lobster tails seasoned with
               coriander and topped with warm chilli butter sauce
             </p>
-            <p>price: $32.00</p>
+            <p>$32.00</p>
           </div>
-          <hr />
         </div>
         <div class="menu_lists">
-          <p>Dried Tomato Florentine Pasta</p>
+          <p>Name: Dried Tomato Florentine Pasta</p>
+          <hr />
           <div>
             <p>
-              description: spicy pasta cooked in a sun dried tomato cream sauce
+              Description: spicy pasta cooked in a sun dried tomato cream sauce
               topped with spinach and mozzarella
             </p>
-            <p>price: $22.00</p>
+            <p>$22.00</p>
           </div>
-          <hr />
         </div>
       </div>
       <div class="section">
         <h3>SALADS</h3>
         <div class="menu_lists">
-          <p>name: Broccoli and Apple Salad with Chicken</p>
+          <p>Name: Broccoli and Apple Salad with Chicken</p>
+          <hr />
           <div>
             <p>
-              description: charred broccoli, sweet fuji apples, feta cheese and
+              Description: charred broccoli, sweet fuji apples, feta cheese and
               warm grilled chicken breast served on a bed of mixed greens
             </p>
-            <p>price: $18.00</p>
+            <p>$18.00</p>
           </div>
-          <hr />
         </div>
         <div class="menu_lists">
-          <p>name: Persimmon, Pomegranate, and Kale Salad</p>
+          <p>Name: Persimmon, Pomegranate, and Kale Salad</p>
+          <hr />
           <div>
             <p>
-              description: massaged seasoned kale salad served with a delicious
+              Description: massaged seasoned kale salad served with a delicious
               tangy citrus dressing
             </p>
-            <p>price: $14.00</p>
+            <p>$14.00</p>
           </div>
-          <hr />
         </div>
         <div class="menu_lists">
-          <p>name: Peach, Sweet Corn and Halloumi Salad</p>
+          <p>Name: Peach, Sweet Corn and Halloumi Salad</p>
+          <hr />
           <div>
             <p>
-              description: fresh sweet corn and juicy peaches served with salty
+              Description: fresh sweet corn and juicy peaches served with salty
               halloumi cheese on arugula
             </p>
-            <p>price: $22.00</p>
+            <p>$22.00</p>
           </div>
-          <hr />
         </div>
       </div>
       <div class="section">
         <h3>DESSERTS</h3>
         <div class="menu_lists">
-          <p>name: Salted Caramel White Chocolate Brownies</p>
+          <p>Name: Salted Caramel White Chocolate Brownies</p>
+          <hr />
           <div>
             <p>
-              description: decadent gooey white chocolate brownies layered with
+              Description: decadent gooey white chocolate brownies layered with
               in house made caramel
             </p>
-            <p>price: $12</p>
+            <p>$12.00</p>
           </div>
-          <hr />
         </div>
         <div class="menu_lists">
-          <p>name: Cinnamon Sugar Pretzel Bites</p>
+          <p>Name: Cinnamon Sugar Pretzel Bites</p>
+          <hr />
           <div>
             <p>
-              description: warm fried dough covered in cinnamon sugar served
+              Description: warm fried dough covered in cinnamon sugar served
               with chocolate sauce for dipping
             </p>
-            <p>price: $8</p>
+            <p>$8.00</p>
           </div>
-          <hr />
         </div>
+      </div>
+      <div class="section">
+        <h3>DEALS</h3>
+        <ul>
+          <li>Monday $3 off vegetarian salads and mains</li>
+          <li>Tuesday $2 off bar rail</li>
+          <li>Wednesday half-priced appetizers after 9pm</li>
+          <li>Thursday $2 off cocktails</li>
+          <li>Friday one free dessert with the purchase 2 mains</li>
+        </ul>
       </div>
     </main>
   </body>
